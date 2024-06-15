@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi cesta</title>
+    <link rel="icon" href="images/shopping-cart-blue.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/checkout.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Mi cesta</h1>
+        <p style="color: #333;">Revisá tus productos antes de confirmar la compra:</p>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Importe</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaProductos">
+                </tbody>
+            </table>
+            <div id="total">
+                Total: 0 €
+            </div>
+        </section>
+        <div class="centrar-div">
+            <button class="button button-outline" onclick="window.location.href='index.html';"><a href="index.html">Seguir comprando</a></button>
+            <button class="button" id="btnComprar">COMPRAR</button>
+        </div>
+    </main>
+</body>
+</html>
